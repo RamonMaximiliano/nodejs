@@ -26,7 +26,7 @@ const server = http.createServer(async (req, res) => {
     res.setHeader("Content-Type", "text/html");
     res.write(data);
     res.end();
-    }else {
+    } else {
       throw new Error("no page there!")
     }  
   } catch (error) {
